@@ -1,0 +1,18 @@
+roles:
+  'Neos.Neos:Administrator':
+    privileges:
+      -
+        privilegeTarget: "I13e.SourceInjector:Injections.NodeTree"
+        permission: GRANT
+  'I13e.SourceInjector:InjectionEditor':
+    label: 'Injection Editor'
+    description: 'User is allowed to show and edit Injections'
+    privileges:
+      -
+        privilegeTarget: "I13e.SourceInjector:Injections.NodeTree"
+        permission: GRANT
+
+privilegeTargets:
+  'Neos\Neos\Security\Authorization\Privilege\NodeTreePrivilege':
+    'I13e.SourceInjector:Injections.NodeTree':
+      matcher: 'nodeIsOfType("I13e.SourceInjector:Document.SourceInjectorPage")'

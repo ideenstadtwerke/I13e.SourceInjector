@@ -15,6 +15,8 @@ After installation you shall be able to place an "Injections" node into your doc
 
 Afterwards add as many "Injection" nodes you like with as many "Code" nodes you wan't into it.
 
+By default, only `Neos.Neos:Administrator` privileged users are able to administrate injections.
+All other users should be given `I13e.SourceInjector:InjectionEditor` to make injections editable.
 
 If you aren't using `head`, `closingHeadTag`, `body` or `closingBodyTag` please adjust the injection output to your likes.
 See [Override/Page.fusion](Resources/Private/Fusion/Override/Page.fusion)
@@ -54,7 +56,6 @@ I13e:
 In feature versions we'll maybe implement more features like:
 * Integration of [KaufmannDigital.GDPR.CookieConsent](https://github.com/KaufmannDigital/KaufmannDigital.GDPR.CookieConsent)
 * Exclusion rules
-* Administration only for users with specific roles
 
 ## Contribution
 
