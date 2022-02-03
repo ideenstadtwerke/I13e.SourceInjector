@@ -1,0 +1,53 @@
+prototype(I13e.SourceInjector:Document.SourceInjectorPage) < prototype(Neos.Neos:Page) {
+  head.stylesheets.backendStyles = Neos.Fusion:Join {
+    neos = Neos.Fusion:Tag {
+      tagName = 'link'
+      attributes {
+        rel = 'stylesheet'
+        type = 'text/css'
+        href = Neos.Fusion:ResourceUri {
+          package = 'Neos.Neos'
+          path = 'Styles/Lite.css'
+        }
+      }
+    }
+    highlightjs = Neos.Fusion:Tag {
+      tagName = 'link'
+      attributes {
+        rel = 'stylesheet'
+        type = 'text/css'
+        href = '//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css'
+      }
+    }
+  }
+  head.javascripts.backendScripts = Neos.Fusion:Join {
+    highlightjs = Neos.Fusion:Tag {
+      tagName = 'script'
+      attributes.src = '//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js'
+    }
+    highlightjs_init = Neos.Fusion:Tag {
+      tagName = 'script'
+      content = 'hljs.highlightAll();'
+    }
+  }
+
+  bodyTag.attributes.class = 'neos-backend neos neos-module neos-controls'
+
+  body >
+  body = Neos.Fusion:Component {
+    renderer = afx`
+      <div class="neos-module-wrap" style="min-height: 100vh; box-sizing: border-box">
+        <div class="neos-content neos-container-fluid">
+          <div class="neos-row-fluid">
+            <legend><i class="fas fa-syringe"></i> Injections</legend>
+            <hr/>
+
+            <Neos.Neos:ContentCollection nodePath="injections"/>
+          </div>
+        </div>
+      </div>
+    `
+  }
+
+  @if.isInBackend = ${documentNode.context.inBackend}
+}

@@ -1,0 +1,5 @@
+prototype(I13e.SourceInjector:Action.Inject.Single.JS) < prototype(Neos.Fusion:Component) {
+  renderer = afx`
+    <script type="text/javascript">{item.properties.code}</script>
+  `
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="" product-name="I13e.SourceInjector">
+    <body>
+      <trans-unit id="ui.label" xml:space="preserve">
+        <source>Code</source>
+      </trans-unit>
+      <trans-unit id="properties.type" xml:space="preserve">
+        <source>Type</source>
+      </trans-unit>
+      <trans-unit id="properties.type.selectBoxEditor.values.html" xml:space="preserve">
+        <source>HTML</source>
+      </trans-unit>
+      <trans-unit id="properties.type.selectBoxEditor.values.js" xml:space="preserve">
+        <source>Javascript</source>
+      </trans-unit>
+      <trans-unit id="properties.type.selectBoxEditor.values.css" xml:space="preserve">
+        <source>CSS</source>
+      </trans-unit>
+      <trans-unit id="properties.code" xml:space="preserve">
+        <source>Code</source>
+      </trans-unit>
+      <trans-unit id="properties.position" xml:space="preserve">
+        <source>Position</source>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.head_start" xml:space="preserve">
+        <source>Begin of head</source>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.head_end" xml:space="preserve">
+        <source>End of head</source>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.body_start" xml:space="preserve">
+        <source>Begin of body</source>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.body_end" xml:space="preserve">
+        <source>End of body</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

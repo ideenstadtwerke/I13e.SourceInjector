@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="" product-name="I13e.SourceInjector">
+    <body>
+      <trans-unit id="ui.label" xml:space="preserve">
+        <source>Code</source>
+        <target state="final">Code</target>
+      </trans-unit>
+      <trans-unit id="properties.type" xml:space="preserve">
+        <source>Type</source>
+        <target state="final">Typ</target>
+      </trans-unit>
+      <trans-unit id="properties.type.selectBoxEditor.values.html" xml:space="preserve">
+        <source>HTML</source>
+        <target state="final">HTML</target>
+      </trans-unit>
+      <trans-unit id="properties.type.selectBoxEditor.values.js" xml:space="preserve">
+        <source>Javascript</source>
+        <target state="final">Javascript</target>
+      </trans-unit>
+      <trans-unit id="properties.type.selectBoxEditor.values.css" xml:space="preserve">
+        <source>CSS</source>
+        <target state="final">CSS</target>
+      </trans-unit>
+      <trans-unit id="properties.code" xml:space="preserve">
+        <source>Code</source>
+        <target state="final">Code</target>
+      </trans-unit>
+      <trans-unit id="properties.position" xml:space="preserve">
+        <source>Position</source>
+        <target state="final">Position</target>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.head_start" xml:space="preserve">
+        <source>Begin of head</source>
+        <target state="final">Anfang von head</target>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.head_end" xml:space="preserve">
+        <source>End of head</source>
+        <target state="final">Ende von head</target>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.body_start" xml:space="preserve">
+        <source>Begin of body</source>
+        <target state="final">Anfang von body</target>
+      </trans-unit>
+      <trans-unit id="properties.position.selectBoxEditor.values.body_end" xml:space="preserve">
+        <source>End of body</source>
+        <target state="final">Ende von body</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

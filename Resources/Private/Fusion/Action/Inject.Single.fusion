@@ -1,0 +1,14 @@
+prototype(I13e.SourceInjector:Action.Inject.Single) < prototype(Neos.Fusion:Case) {
+  css {
+    condition = ${item.properties.type == 'css'}
+    renderer = I13e.SourceInjector:Action.Inject.Single.CSS
+  }
+  js {
+    condition = ${item.properties.type == 'js'}
+    renderer = I13e.SourceInjector:Action.Inject.Single.JS
+  }
+  html {
+    condition = ${true || item.properties.type == 'html'}
+    renderer = I13e.SourceInjector:Action.Inject.Single.HTML
+  }
+}

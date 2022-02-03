@@ -1,0 +1,13 @@
+I13e.SourceInjector:Mixin.InspectorGroups:
+  abstract: true
+  ui:
+    inspector:
+      tabs:
+        injector:
+          icon: syringe
+          label: i18n
+      groups:
+        injector:
+          icon: syringe
+          label: i18n
+          tab: injector

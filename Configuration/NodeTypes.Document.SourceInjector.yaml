@@ -1,0 +1,11 @@
+I13e.SourceInjector:Document.SourceInjectorPage:
+  superTypes:
+    Neos.Neos:Document: true
+    I13e.SourceInjector:Mixin.InspectorDefaultFields: true
+  childNodes:
+    injections:
+      type: 'I13e.SourceInjector:Content.Injections'
+  ui:
+    label: i18n
+    icon: 'syringe'
+    group: 'administration'

@@ -1,0 +1,5 @@
+prototype(I13e.SourceInjector:Action.Inject.Single.HTML) < prototype(Neos.Fusion:Component) {
+  renderer = afx`
+    {item.properties.code}
+  `
+}

@@ -1,0 +1,34 @@
+{
+    "type": "neos-package",
+    "name": "i13e/sourceinjector",
+    "description": "Inject HTML/JS/CSS-Snippets directly out of the Neos CMS backend into frontend pages",
+    "keywords": [
+        "neos",
+        "neoscms",
+        "inject",
+        "snippets"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "neos/neos": ">=5.3",
+        "neos/fusion": ">=5.3",
+        "neos/fusion-afx": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "I13e\\SourceInjector\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "I13e.SourceInjector"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dominik Jansen",
+            "email": "dominik.jansen@leineenergie.de"
+        }
+    ]
+}

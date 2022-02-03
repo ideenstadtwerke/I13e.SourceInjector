@@ -1,0 +1,21 @@
+prototype(Neos.Neos:Page) {
+  @context.sourceInjectorDebugEnabled = ${Configuration.setting('I13e.SourceInjector.enableDebugComments')}
+
+  headStart = I13e.SourceInjector:Action.Inject {
+    @position = 'before head'
+    position = 'head_start'
+  }
+  headEnd = I13e.SourceInjector:Action.Inject {
+    @position = 'before closingHeadTag'
+    position = 'head_end'
+  }
+
+  bodyStart = I13e.SourceInjector:Action.Inject {
+    @position = 'before body'
+    position = 'body_start'
+  }
+  bodyEnd = I13e.SourceInjector:Action.Inject {
+    @position = 'before closingBodyTag'
+    position = 'body_end'
+  }
+}

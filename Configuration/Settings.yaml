@@ -1,0 +1,16 @@
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        administration:
+          position: 999
+          label: 'Administration'
+          collapsed: true
+    fusion:
+      autoInclude:
+        I13e.SourceInjector: true
+    userInterface:
+      translation:
+        autoInclude:
+          'I13e.SourceInjector':
+            - 'NodeTypes/*'

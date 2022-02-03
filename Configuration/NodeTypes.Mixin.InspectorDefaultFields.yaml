@@ -1,0 +1,8 @@
+I13e.SourceInjector:Mixin.InspectorDefaultFields:
+  abstract: true
+  properties:
+    _hiddenInIndex:
+      defaultValue: true
+      ui:
+        inspector:
+          hidden: true

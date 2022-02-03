@@ -1,0 +1,5 @@
+prototype(I13e.SourceInjector:Action.Inject.Single.CSS) < prototype(Neos.Fusion:Component) {
+  renderer = afx`
+    <style type="text/css">{props.item.properties.code}</style>
+  `
+}

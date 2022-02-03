@@ -1,0 +1,14 @@
+prototype(I13e.SourceInjector:Content.Injection) < prototype(Neos.Neos:ContentComponent) {
+  injectionName = Neos.Neos:Editable {
+    property = 'title'
+    block = false
+  }
+
+  renderer = afx`
+    <fieldset>
+      <legend>Injection "{props.injectionName}"</legend>
+      <Neos.Neos:ContentCollection/>
+    </fieldset>
+    <hr/>
+  `
+}

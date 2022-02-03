@@ -1,0 +1,19 @@
+prototype(I13e.SourceInjector:Content.Code) < prototype(Neos.Neos:ContentComponent) {
+
+  type = ${q(node).property('type')}
+  code = ${q(node).property('code')}
+  position = ${q(node).property('position')}
+
+  renderer = afx`
+    <fieldset style="max-width: 100%">
+      <div>
+        <strong>Type</strong>: {I18n.translate('properties.type.selectBoxEditor.values.' + props.type, props.type, [], 'NodeTypes.Content.Code', 'I13e.SourceInjector')}
+        <br/>
+        <strong>Position</strong>: {I18n.translate('properties.position.selectBoxEditor.values.' + props.position, props.position, [], 'NodeTypes.Content.Code', 'I13e.SourceInjector')}
+        <br/>
+      </div>
+      <br/>
+      <pre><code class={'language-' + props.type}>{String.htmlSpecialChars(props.code)}</code></pre>
+    </fieldset>
+  `
+}

@@ -1,0 +1,13 @@
+prototype(I13e.SourceInjector:Action.Inject) < prototype(Neos.Fusion:Component) {
+  position = ${position}
+
+  codeNodes = ${q(site).find('[instanceof I13e.SourceInjector:Content.Code]').filter('[position=' + this.position + ']').get()}
+
+  renderer = Neos.Fusion:Loop {
+    items = ${props.codeNodes}
+    itemRenderer = I13e.SourceInjector:Action.Inject.Single
+    itemRenderer.@if.condition = ${q(item).parent().property('visibleInBackend') || !documentNode.context.inBackend}
+    itemRenderer.@process.wrapComment = ${'<!-- INJECT_START: ' + item.parent.properties.title + ':' + item.properties.position + ' -->' + value + '<!-- INJECT_END -->'}
+    itemRenderer.@process.wrapComment.@if.debug = ${sourceInjectorDebugEnabled}
+  }
+}

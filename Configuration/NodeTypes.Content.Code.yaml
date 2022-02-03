@@ -1,0 +1,67 @@
+I13e.SourceInjector:Content.Code:
+  label: "${node.properties.type ? String.toUpperCase(node.properties.type) + '-Code: ' + node.properties.position : 'Code'}"
+  superTypes:
+    Neos.Neos:Content: true
+    I13e.SourceInjector:Mixin.InspectorGroups: true
+    I13e.SourceInjector:Mixin.InspectorDefaultFields: true
+  ui:
+    label: i18n
+    icon: code
+    group: general
+    inspector:
+      groups:
+        injector:
+          icon: code
+  properties:
+    type:
+      type: string
+      defaultValue: 'html'
+      ui:
+        label: i18n
+        reloadPageIfChanged: true
+        inspector:
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          group: injector
+          editorOptions:
+            values:
+              html:
+                label: i18n
+              js:
+                label: i18n
+              css:
+                label: i18n
+    code:
+      type: string
+      ui:
+        reloadPageIfChanged: true
+        label: i18n
+        inspector:
+          group: injector
+          editor: Neos.Neos/Inspector/Editors/CodeEditor
+          editorOptions:
+            highlightingMode: 'ClientEval:node.properties.type == "css" ? "text/css" :node.properties.type == "js" ? "text/javascript" : "text/html"'
+
+    position:
+      type: string
+      defaultValue: 'body_end'
+      ui:
+        label: i18n
+        reloadPageIfChanged: true
+        inspector:
+          group: injector
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              head_start:
+                group: head
+                label: i18n
+              head_end:
+                group: head
+                label: i18n
+              body_start:
+                group: body
+                label: i18n
+              body_end:
+                group: body
+                label: i18n
+
