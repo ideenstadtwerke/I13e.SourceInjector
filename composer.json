@@ -10,7 +10,6 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=7.4",
         "neos/neos": ">=5.3",
         "neos/fusion": ">=5.3",
         "neos/fusion-afx": "*"
