@@ -11,4 +11,15 @@ prototype(I13e.SourceInjector:Action.Inject.Single) < prototype(Neos.Fusion:Case
     condition = ${true || item.properties.type == 'html'}
     renderer = I13e.SourceInjector:Action.Inject.Single.HTML
   }
+
+  @cache {
+    mode = 'cached'
+    entryIdentifier {
+      node = ${item}
+    }
+    entryTags {
+      1 = ${Neos.Caching.descendantOfTag(item.parent)}
+      2 = ${Neos.Caching.nodeTag(item)}
+    }
+  }
 }
