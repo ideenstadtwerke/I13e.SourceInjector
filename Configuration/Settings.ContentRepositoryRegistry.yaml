@@ -1,0 +1,7 @@
+Neos:
+  ContentRepositoryRegistry:
+    presets:
+      'default':
+        commandHooks:
+          'I13e.SourceInjector:SubtreeTagging':
+            factoryObjectName: I13e\SourceInjector\CommandHook\SourceInjectorSubtreeTagCommandHookFactory
