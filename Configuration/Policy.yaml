@@ -13,6 +13,6 @@ roles:
         permission: GRANT
 
 privilegeTargets:
-  'Neos\Neos\Security\Authorization\Privilege\NodeTreePrivilege':
+  'Neos\Neos\Security\Authorization\Privilege\EditNodePrivilege':
     'I13e.SourceInjector:Injections.NodeTree':
-      matcher: 'nodeIsOfType("I13e.SourceInjector:Document.SourceInjectorPage")'
+      matcher: 'i13e-sourceinjector-injections'

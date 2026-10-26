@@ -18,6 +18,8 @@ Afterwards add as many "Injection" nodes you like with as many "Code" nodes you 
 By default, only `Neos.Neos:Administrator` privileged users are able to administrate injections.
 All other users should be given `I13e.SourceInjector:InjectionEditor` to make injections editable.
 
+When upgrading to Neos 9, run `./flow i13e.sourceinjector:sourceinjector:backfillAuthorizationTags` once for each content repository that contains SourceInjector pages. This tags existing page trees for the Neos 9 `EditNodePrivilege`; newly created SourceInjector page trees are tagged automatically.
+
 If you aren't using `head`, `closingHeadTag`, `body` or `closingBodyTag` please adjust the injection output to your likes.
 See [Override/Page.fusion](Resources/Private/Fusion/Override/Page.fusion)
 ```
