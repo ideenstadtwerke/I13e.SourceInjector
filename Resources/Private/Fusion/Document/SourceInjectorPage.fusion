@@ -49,5 +49,5 @@ prototype(I13e.SourceInjector:Document.SourceInjectorPage) < prototype(Neos.Neos
     `
   }
 
-  @if.isInBackend = ${documentNode.context.inBackend}
+  @if.isInBackend = ${renderingMode.isEdit || renderingMode.isPreview}
 }
